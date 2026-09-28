@@ -1,0 +1,6 @@
+Private Character Chat sample application
+Copyright 2026
+
+Permission is granted to use and modify the application source for personal use.
+Third-party dependencies and downloaded models retain their own licenses and terms.
+No model weights are included.

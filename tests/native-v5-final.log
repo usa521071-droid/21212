@@ -1,0 +1,15 @@
+tests/native-support/dev/ffmpegkit/llama/Llama.kt:13:45: warning: parameter 'config' is never used
+    suspend fun loadModel(modelPath:String, config:LlamaConfig):LlamaModel { delay(10); loads++; return LlamaModel(modelPath) }
+                                            ^
+tests/native-support/dev/ffmpegkit/llama/Llama.kt:14:59: warning: parameter 'systemPrompt' is never used
+    suspend fun complete(model:LlamaModel, prompt:String, systemPrompt:String, maxTokens:Int):LlamaResult {
+                                                          ^
+tests/native-support/dev/ffmpegkit/llama/Llama.kt:14:80: warning: parameter 'maxTokens' is never used
+    suspend fun complete(model:LlamaModel, prompt:String, systemPrompt:String, maxTokens:Int):LlamaResult {
+                                                                               ^
+PASS simultaneous loads share one model
+PASS native generation serialized
+PASS unload waits until generation returns
+PASS unchanged settings do not reload model each turn
+PASS model selection plus generation is atomic across callers
+5 concurrency tests passed with a fake backend, not native inference.

@@ -1,0 +1,27 @@
+PRIVATE CHARACTER CHAT 5.0 — SECURITY AND PRIVACY
+
+The original encrypted chat store is preserved. New social text and metadata use
+Android Keystore AES-GCM with AtomicFile write/rollback. Corrupt reads preserve
+stored data instead of silently replacing it. These Android storage paths have
+not been exercised on a physical device in this session.
+
+Imported JPEGs are app-private, but are not individually AES-encrypted. Imports
+normalize orientation and re-encode images (not a comprehensive privacy audit).
+Public comment prompts do not include private DM history. Social characters are
+fictional and local, not real people or a real Instagram account.
+
+Photo sharing is request-only by default. Public automatic attachments require
+separate opt-in. Captions/tags/descriptions come from the user: the text model
+cannot inspect image pixels or validate their contents.
+
+The original INTERNET permission remains for model downloads. App data backups
+remain disabled in the manifest/extraction rules. A rooted/compromised/unlocked
+phone can expose data. Notification previews depend on phone settings.
+
+The native llama-android AAR is third-party and unaudited here. LLM output is not
+reliable real-world advice. Application passwords/signing keystore already present
+in the supplied source are retained: do not publish this project publicly or reuse
+this development signing identity for a public production distribution.
+
+No APK or APK signature was produced or tested this session. Keystore inspection
+is only evidence that the existing signing key has been preserved.

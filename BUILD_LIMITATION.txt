@@ -1,0 +1,6 @@
+No APK was produced in this session. The actual build command was attempted and
+exited before compilation. Gradle and Android SDK/build tools are not installed;
+network acquisition of these tools failed DNS resolution.
+
+This is complete source code, NOT an APK or a successful Android build.
+See TEST_REPORT.md and build-evidence/APK_BUILD_ATTEMPT.txt.

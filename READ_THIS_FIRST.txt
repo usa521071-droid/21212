@@ -1,0 +1,14 @@
+PRIVATE CHARACTER CHAT 5.0 — LOCAL CIRCLE
+
+THIS ARCHIVE IS SOURCE CODE. NO APK WAS GENERATED IN THIS SESSION.
+
+New launcher: private fictional social feed with comments and a configurable cast.
+The Chats tab opens the existing private-chat app. The model and signing key are
+preserved. Posts and character replies are local fiction, not real Instagram.
+
+Read README.md for use, TEST_REPORT.md for tests and unverified parts, and
+build-evidence/APK_BUILD_ATTEMPT.txt for the actual failed build preflight.
+
+Only an equipped Android build runner can currently finish this source build.
+The script tools/build-android.sh verifies an actual APK before reporting success.
+Keep this source private because it contains the existing signing key.

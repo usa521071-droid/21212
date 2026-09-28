@@ -1,0 +1,124 @@
+app/src/main/java/com/localcharacter/chat/BrainEngine.kt:255:9: warning: parameter 'now' is never used
+        now: Long = System.currentTimeMillis(),
+        ^
+app/src/main/java/com/localcharacter/chat/ContextUnderstandingEngine.kt:94:13: warning: variable 'lastAssistantEntry' is assigned but never accessed
+        var lastAssistantEntry: ContextIndexEntry? = null
+            ^
+app/src/main/java/com/localcharacter/chat/ContextUnderstandingEngine.kt:475:9: warning: parameter 'latest' is never used
+        latest: String,
+        ^
+app/src/main/java/com/localcharacter/chat/ReplyPipeline.kt:282:20: warning: parameter 'latestUserMessage' is never used
+                   latestUserMessage: String, mode: PromptMode): String {
+                   ^
+app/src/main/java/com/localcharacter/chat/ReplyPipeline.kt:282:47: warning: parameter 'mode' is never used
+                   latestUserMessage: String, mode: PromptMode): String {
+                                              ^
+app/src/main/java/com/localcharacter/chat/ReplyPipeline.kt:289:45: warning: parameter 'latestUserMessage' is never used
+    fun shouldHideStoredReply(text: String, latestUserMessage: String = ""): Boolean =
+                                            ^
+tests/core/SocialRegression.kt:48:13: warning: variable 'prior' is never used
+        val prior = restored.posts.first { it.id == "p" }.revision
+            ^
+PASS JSON fixture actually round-trips
+PASS Legacy model path, context, mood preserved
+PASS Escaped stars and bold are not directions
+PASS Mixed instructions kept out of spoken message
+PASS Unclosed director text is a visible validation error
+PASS Explicit scene values are last-write-wins
+PASS Scene facts survive next message and JSON restart
+PASS Reply direction is one-turn only
+PASS Configuration-only directions do not require generation
+PASS Scene does not make Hi a long response
+PASS Texting and physical roleplay are independent
+PASS Mood directive overrides effective tone, not saved baseline
+PASS Mood off excludes both baseline and scene mood instructions
+PASS Manual mood remains stable when rebuilding branch
+PASS Trait controls reach the actual prompt
+PASS Why not anchors exact refusal
+PASS Correction is not a generic short reply
+PASS Superseded location never returns on repeated refresh
+PASS Director facts do not overwrite real user identity
+PASS Likes do not turn assistant identity into user facts
+PASS Deleting scene branch restores previous location
+PASS Clear scene is durable across history rebuild
+PASS Reasoning removed but final text kept
+PASS No fake fallback or copied director action
+PASS Narration removed in texting; legitimate self-report retained
+PASS Actions retained in roleplay; no forced user decisions
+PASS User transcript continuation never displayed
+PASS Non-Latin text is not deleted as gibberish
+PASS Hard-cut draft rejected, not disguised with ellipsis
+PASS Long greeting shortens only at complete sentence boundary
+PASS Long conversations keep greeting prompt bounded; 500 index retained
+PASS Full direction persistence round-trip
+PASS Unsupported huge input fails visibly without mutating chat
+PASS Natural next-reply directions do not become permanent scene facts
+PASS Natural friend setup overrides an old partner stage
+PASS Roleplay format requires a real generated action, never adds a fake one
+PASS CPU thread preference survives serialization
+TOTAL 37 tests passed. No Android device or real-model inference was executed by this suite.
+PASS self identity round trip
+PASS old settings migrate without gender assumption
+PASS role is applied, not inferred anatomy
+PASS old settings get request-only photos
+PASS minimum self age adult
+PASS exact reply chain
+PASS actual refusal in prompt
+PASS newest target at end
+PASS correct character only
+PASS identity pronouns injected
+PASS role and relationship real wiring
+PASS another post cannot leak
+PASS explicit old target survives 500 window
+PASS long thread prompt stays bounded
+PASS full public history preserved
+PASS liking does not fabricate crowd
+PASS delete descendants, not parent
+PASS delete preserves other posts
+PASS post deletion removes all its comments
+PASS deleted target fails rather than guessing
+PASS mood off omits scores
+PASS manual mood score injected
+PASS automatic mood responds to actual user message
+PASS disabled mood freezes saved values
+PASS scene cast persists
+PASS post field overrides global only where specified
+PASS user-role director applied
+PASS one-reply directive in prompt
+PASS scene doesn't force physical narration on public channel
+PASS clear scene works
+PASS unclosed direction warns
+PASS speaker continuation removed
+PASS reasoning-only not replaced by fake answer
+PASS action-only not posted
+PASS photo marker not shown
+PASS no unsolicited image
+PASS matching requested photo
+PASS unmatched request no random substitute
+PASS refusal overrides marker
+PASS don't send overrides marker
+PASS public photo denied by default
+PASS explicit public permission honored
+PASS never share setting enforced
+PASS recent image not repeated
+PASS contextual requires meaningful marker
+PASS contextual cooldown enforced
+PASS contextual matching after cooldown
+PASS asking for clarification is not photo consent
+PASS a deferred photo is not sent despite marker
+PASS an attachment promise is identified
+PASS ordinary description not mistaken for attachment promise
+PASS cut-off text fails visibly
+PASS complete sentence at limit is retained
+PASS nine real style settings
+PASS style preserves names numbers and negation: clean
+PASS style preserves names numbers and negation: natural
+PASS style preserves names numbers and negation: casual
+PASS style preserves names numbers and negation: minimal
+PASS style preserves names numbers and negation: warm
+PASS style preserves names numbers and negation: dry
+PASS style preserves names numbers and negation: playful
+PASS style preserves names numbers and negation: formal
+PASS style preserves names numbers and negation: expressive
+PASS new styles survive settings roundtrip
+Social regression cases: 64 PASS

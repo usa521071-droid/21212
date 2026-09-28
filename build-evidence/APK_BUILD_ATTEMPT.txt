@@ -1,0 +1,32 @@
+Private Character Chat 5.0 / Local Circle — actual build attempt
+UTC: 2026-09-28 20:11:18
+
+$ bash tools/build-android.sh
+BUILD BLOCKED: Gradle 8.9 is not installed. No Android compilation has occurred.
+
+Build command exit code: 2
+
+Tool availability:
+/usr/bin/java
+/usr/bin/javac
+/root/.sdkman/candidates/kotlin/current/bin/kotlinc
+/usr/bin/keytool
+gradle: not installed
+sdkmanager: not installed
+aapt2: not installed
+apksigner: not installed
+
+Network acquisition attempts (HEAD only; no files downloaded):
+curl -I --connect-timeout 5 --max-time 10 https://services.gradle.org/distributions/gradle-8.9-bin.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: services.gradle.org
+curl exit code: 6
+curl -I --connect-timeout 5 --max-time 10 https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0curl: (6) Could not resolve host: dl.google.com
+curl exit code: 6
+
+APK output search:
+No APK was produced in this attempt. No source archive was renamed as an APK.
